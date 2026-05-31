@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Minería de Datos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .interactive-card:hover .hidden-content {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+        .hidden-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans p-4 md:p-8">
+
+    <header class="max-w-5xl mx-auto text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Fundamentos de la Minería de Datos</h1>
+        <p class="text-lg text-slate-600">Síntesis interactiva de los pilares cognitivos, analíticos y metodológicos.</p>
+        <p class="text-sm text-slate-500 mt-2">Pase el cursor (o toque) sobre las tarjetas para revelar la información técnica.</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- 1. Jerarquía Cognitiva -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-500 interactive-card cursor-pointer transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i data-lucide="layers" class="text-blue-500 w-8 h-8 mr-3"></i>
+                <h2 class="text-2xl font-bold text-slate-800">1. Jerarquía Cognitiva</h2>
+            </div>
+            <p class="text-slate-600 font-medium">Progresión formal desde registros crudos hasta modelos accionables.</p>
+            
+            <div class="hidden-content flex flex-col items-center w-full mt-4 space-y-2">
+                <!-- Conocimiento -->
+                <div class="w-2/3 bg-blue-600 text-white rounded p-3 text-center shadow">
+                    <span class="font-bold block text-lg">Conocimiento</span>
+                    <span class="text-sm block">Accionable y Predictivo. Ej: Reglas de decisión, árboles.</span>
+                </div>
+                <!-- Información -->
+                <div class="w-5/6 bg-blue-400 text-white rounded p-3 text-center shadow">
+                    <span class="font-bold block text-lg">Información</span>
+                    <span class="text-sm block">Procesada y Contextualizada. Ej: Promedios, reportes.</span>
+                </div>
+                <!-- Dato -->
+                <div class="w-full bg-slate-300 text-slate-800 rounded p-3 text-center shadow">
+                    <span class="font-bold block text-lg">Dato</span>
+                    <span class="text-sm block">Crudo, pasivo. Vectores multidimensionales. Ej: "7.8"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Infoxicación -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-red-500 interactive-card cursor-pointer transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i data-lucide="alert-triangle" class="text-red-500 w-8 h-8 mr-3"></i>
+                <h2 class="text-2xl font-bold text-slate-800">2. Infoxicación</h2>
+            </div>
+            <p class="text-slate-600 font-medium">El problema del exceso de datos y la intervención de la minería.</p>
+
+            <div class="hidden-content mt-4 border-l-4 border-red-200 pl-4">
+                <p class="mb-3 text-sm text-slate-700"><strong class="text-red-600">El Problema:</strong> Acumulación masiva de información desestructurada que supera la capacidad de procesamiento humano, paralizando o sesgando la toma de decisiones organizacionales.</p>
+                <p class="text-sm text-slate-700"><strong class="text-green-600">La Solución (Minería de Datos):</strong> Proceso analítico no trivial que extrae patrones válidos, novedosos y comprensibles, convirtiendo el ruido en ventaja competitiva.</p>
+            </div>
+        </section>
+
+        <!-- 3. Multidisciplinariedad -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-purple-500 interactive-card cursor-pointer transition-transform transform hover:-translate-y-1 md:col-span-2">
+            <div class="flex items-center mb-4">
+                <i data-lucide="network" class="text-purple-500 w-8 h-8 mr-3"></i>
+                <h2 class="text-2xl font-bold text-slate-800">3. Multidisciplinariedad</h2>
+            </div>
+            <p class="text-slate-600 font-medium text-center mb-2">Convergencia estructural de tres áreas científicas fundamentales:</p>
+
+            <div class="hidden-content grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 text-center">
+                    <i data-lucide="bar-chart-2" class="text-purple-600 w-10 h-10 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-purple-800">Estadística</h3>
+                    <p class="text-xs text-slate-600 mt-1">Fundamento matemático para análisis inferencial y validación de hipótesis.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100 text-center">
+                    <i data-lucide="cpu" class="text-indigo-600 w-10 h-10 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-indigo-800">Machine Learning</h3>
+                    <p class="text-xs text-slate-600 mt-1">Algoritmos capaces de generalizar comportamientos a partir de experiencia empírica.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-xl border border-fuchsia-100 text-center">
+                    <i data-lucide="database" class="text-fuchsia-600 w-10 h-10 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-fuchsia-800">Bases de Datos</h3>
+                    <p class="text-xs text-slate-600 mt-1">Soporte tecnológico, supercomputación y escalabilidad para Big Data.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Taxonomía de Tareas -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-teal-500 interactive-card cursor-pointer transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i data-lucide="split-square-horizontal" class="text-teal-500 w-8 h-8 mr-3"></i>
+                <h2 class="text-2xl font-bold text-slate-800">4. Taxonomía de Tareas</h2>
+            </div>
+            <p class="text-slate-600 font-medium">Clasificación analítica de los objetivos de extracción.</p>
+
+            <div class="hidden-content grid grid-cols-1 gap-4 mt-4">
+                <div class="bg-teal-50 p-3 rounded-lg border-l-4 border-teal-600">
+                    <h3 class="font-bold text-teal-800 text-sm">Predictivas (Aprendizaje Supervisado)</h3>
+                    <p class="text-xs text-slate-700 mt-1">Entrada: Datos con variables independientes (X) y etiqueta (Y).<br>Objetivo: Estimar comportamientos o categorizar.<br><strong>Ejemplo: Clasificación y Regresión.</strong></p>
+                </div>
+                <div class="bg-cyan-50 p-3 rounded-lg border-l-4 border-cyan-600">
+                    <h3 class="font-bold text-cyan-800 text-sm">Descriptivas (Aprendizaje No Supervisado)</h3>
+                    <p class="text-xs text-slate-700 mt-1">Entrada: Datos sin etiquetas previas (Solo X).<br>Objetivo: Descubrir estructuras o agrupamientos ocultos.<br><strong>Ejemplo: Clustering (Agrupamiento).</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Proceso KDD -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-orange-500 interactive-card cursor-pointer transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i data-lucide="workflow" class="text-orange-500 w-8 h-8 mr-3"></i>
+                <h2 class="text-2xl font-bold text-slate-800">5. Proceso KDD</h2>
+            </div>
+            <p class="text-slate-600 font-medium">Fases del Descubrimiento de Conocimiento en Bases de Datos.</p>
+
+            <div class="hidden-content mt-4">
+                <p class="text-xs text-slate-500 mb-3 text-center italic">Nota: La aplicación del algoritmo (Fase 4) es solo una parte del ciclo.</p>
+                <ul class="relative border-l border-orange-200 ml-3 space-y-3 pb-2">
+                    <li class="pl-6">
+                        <span class="absolute w-4 h-4 bg-orange-500 rounded-full -left-2 top-1 border-2 border-white"></span>
+                        <h4 class="font-bold text-sm text-slate-800">1. Selección</h4>
+                        <p class="text-xs text-slate-600">Identificación de datos objetivo.</p>
+                    </li>
+                    <li class="pl-6">
+                        <span class="absolute w-4 h-4 bg-orange-400 rounded-full -left-2 top-1 border-2 border-white"></span>
+                        <h4 class="font-bold text-sm text-slate-800">2. Preprocesamiento</h4>
+                        <p class="text-xs text-slate-600">Limpieza de ruido y datos faltantes.</p>
+                    </li>
+                    <li class="pl-6">
+                        <span class="absolute w-4 h-4 bg-orange-400 rounded-full -left-2 top-1 border-2 border-white"></span>
+                        <h4 class="font-bold text-sm text-slate-800">3. Transformación</h4>
+                        <p class="text-xs text-slate-600">Reducción de dimensiones (Procesos ETL).</p>
+                    </li>
+                    <li class="pl-6">
+                        <span class="absolute w-4 h-4 bg-orange-600 rounded-full -left-2 top-1 border-2 border-white shadow shadow-orange-300"></span>
+                        <h4 class="font-bold text-sm text-slate-800">4. Minería de Datos</h4>
+                        <p class="text-xs text-slate-600">Aplicación del modelo matemático/algoritmo.</p>
+                    </li>
+                    <li class="pl-6">
+                        <span class="absolute w-4 h-4 bg-orange-500 rounded-full -left-2 top-1 border-2 border-white"></span>
+                        <h4 class="font-bold text-sm text-slate-800">5. Evaluación</h4>
+                        <p class="text-xs text-slate-600">Interpretación de patrones y conocimiento.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-8 text-center text-slate-500 text-xs">
+        Universidad Estatal Amazónica - Asignatura Minería de Datos (Semana 1)
+    </footer>
+
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+        
+        // Soporte táctil básico para móviles
+        document.querySelectorAll('.interactive-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const content = this.querySelector('.hidden-content');
+                // Toggle simple para móvil (el hover funciona por defecto en CSS)
+                if (window.innerWidth <= 768) {
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.opacity = null;
+                        content.style.marginTop = null;
+                    } else {
+                        content.style.maxHeight = "500px";
+                        content.style.opacity = "1";
+                        content.style.marginTop = "1rem";
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
